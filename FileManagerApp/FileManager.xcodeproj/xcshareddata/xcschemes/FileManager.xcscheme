@@ -21,6 +21,20 @@
                ReferencedContainer = "container:FileManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AABB00012C3417AE00AABB01"
+               BuildableName = "FileManagerUITests.xctest"
+               BlueprintName = "FileManagerUITests"
+               ReferencedContainer = "container:FileManager.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
