@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113871C12FB7AFB5009CC5B7 /* FileManager.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = FileManager.xctestplan; path = FileManagerUITests/FileManager.xctestplan; sourceTree = SOURCE_ROOT; };
 		8E210A8D2C3417AE00923D7A /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E210A902C3417AE00923D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E210A922C3417AE00923D7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		AABB00152C3417AE00AABB15 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		AABB00162C3417AE00AABB16 /* AddFolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderTests.swift; sourceTree = "<group>"; };
 		AABB00172C3417AE00AABB17 /* AddPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoTests.swift; sourceTree = "<group>"; };
+		AABB00302C3417AE00AABB30 /* FileManagerUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileManagerUITests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +106,17 @@
 			children = (
 				8E210A8F2C3417AE00923D7A /* FileManager */,
 				AABB000B2C3417AE00AABB0B /* FileManagerUITests */,
+				AABB00312C3417AE00AABB31 /* TestPlans */,
 				8E210A8E2C3417AE00923D7A /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		AABB00312C3417AE00AABB31 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				AABB00302C3417AE00AABB30 /* FileManagerUITests.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 		8E210A8E2C3417AE00923D7A /* Products */ = {
@@ -219,6 +230,7 @@
 			children = (
 				AABB00152C3417AE00AABB15 /* LoginTests.swift */,
 				AABB00162C3417AE00AABB16 /* AddFolderTests.swift */,
+				113871C12FB7AFB5009CC5B7 /* FileManager.xctestplan */,
 				AABB00172C3417AE00AABB17 /* AddPhotoTests.swift */,
 			);
 			path = Tests;
