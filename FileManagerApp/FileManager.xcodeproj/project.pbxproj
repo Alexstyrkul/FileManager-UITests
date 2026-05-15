@@ -27,7 +27,25 @@
 		8E94545E2C35EE80003C336F /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E94545D2C35EE80003C336F /* KeychainWrapper.swift */; };
 		8E9454602C35F19D003C336F /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E94545F2C35F19D003C336F /* SettingsService.swift */; };
 		8ECDE9AB2C353D43009C5922 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDE9AA2C353D43009C5922 /* PhotoViewController.swift */; };
+		AABB00202C3417AE00AABB20 /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00102C3417AE00AABB10 /* AppScreen.swift */; };
+		AABB00212C3417AE00AABB21 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00112C3417AE00AABB11 /* BaseTest.swift */; };
+		AABB00222C3417AE00AABB22 /* FileListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00122C3417AE00AABB12 /* FileListScreen.swift */; };
+		AABB00232C3417AE00AABB23 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00132C3417AE00AABB13 /* LoginScreen.swift */; };
+		AABB00242C3417AE00AABB24 /* SetPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00142C3417AE00AABB14 /* SetPasswordScreen.swift */; };
+		AABB00252C3417AE00AABB25 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00152C3417AE00AABB15 /* LoginTests.swift */; };
+		AABB00262C3417AE00AABB26 /* AddFolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00162C3417AE00AABB16 /* AddFolderTests.swift */; };
+		AABB00272C3417AE00AABB27 /* AddPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00172C3417AE00AABB17 /* AddPhotoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AABB00072C3417AE00AABB07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E210A852C3417AE00923D7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E210A8C2C3417AE00923D7A;
+			remoteInfo = FileManager;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8E210A8D2C3417AE00923D7A /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,10 +70,26 @@
 		8E94545D2C35EE80003C336F /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		8E94545F2C35F19D003C336F /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		8ECDE9AA2C353D43009C5922 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		AABB00022C3417AE00AABB02 /* FileManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABB00102C3417AE00AABB10 /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		AABB00112C3417AE00AABB11 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		AABB00122C3417AE00AABB12 /* FileListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListScreen.swift; sourceTree = "<group>"; };
+		AABB00132C3417AE00AABB13 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		AABB00142C3417AE00AABB14 /* SetPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordScreen.swift; sourceTree = "<group>"; };
+		AABB00152C3417AE00AABB15 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		AABB00162C3417AE00AABB16 /* AddFolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderTests.swift; sourceTree = "<group>"; };
+		AABB00172C3417AE00AABB17 /* AddPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8E210A8A2C3417AE00923D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABB00042C3417AE00AABB04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8E210A8F2C3417AE00923D7A /* FileManager */,
+				AABB000B2C3417AE00AABB0B /* FileManagerUITests */,
 				8E210A8E2C3417AE00923D7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				8E210A8D2C3417AE00923D7A /* FileManager.app */,
+				AABB00022C3417AE00AABB02 /* FileManagerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +185,45 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		AABB000B2C3417AE00AABB0B /* FileManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AABB000C2C3417AE00AABB0C /* Base */,
+				AABB000D2C3417AE00AABB0D /* Screens */,
+				AABB000E2C3417AE00AABB0E /* Tests */,
+			);
+			path = FileManagerUITests;
+			sourceTree = "<group>";
+		};
+		AABB000C2C3417AE00AABB0C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AABB00102C3417AE00AABB10 /* AppScreen.swift */,
+				AABB00112C3417AE00AABB11 /* BaseTest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AABB000D2C3417AE00AABB0D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AABB00122C3417AE00AABB12 /* FileListScreen.swift */,
+				AABB00132C3417AE00AABB13 /* LoginScreen.swift */,
+				AABB00142C3417AE00AABB14 /* SetPasswordScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AABB000E2C3417AE00AABB0E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AABB00152C3417AE00AABB15 /* LoginTests.swift */,
+				AABB00162C3417AE00AABB16 /* AddFolderTests.swift */,
+				AABB00172C3417AE00AABB17 /* AddPhotoTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +244,24 @@
 			productReference = 8E210A8D2C3417AE00923D7A /* FileManager.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AABB00012C3417AE00AABB01 /* FileManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABB000A2C3417AE00AABB0A /* Build configuration list for PBXNativeTarget "FileManagerUITests" */;
+			buildPhases = (
+				AABB00032C3417AE00AABB03 /* Sources */,
+				AABB00042C3417AE00AABB04 /* Frameworks */,
+				AABB00052C3417AE00AABB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AABB00062C3417AE00AABB06 /* PBXTargetDependency */,
+			);
+			name = FileManagerUITests;
+			productName = FileManagerUITests;
+			productReference = AABB00022C3417AE00AABB02 /* FileManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +274,10 @@
 				TargetAttributes = {
 					8E210A8C2C3417AE00923D7A = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					AABB00012C3417AE00AABB01 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8E210A8C2C3417AE00923D7A;
 					};
 				};
 			};
@@ -198,6 +295,7 @@
 			projectRoot = "";
 			targets = (
 				8E210A8C2C3417AE00923D7A /* FileManager */,
+				AABB00012C3417AE00AABB01 /* FileManagerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +307,13 @@
 			files = (
 				8E210A9A2C3417AF00923D7A /* Assets.xcassets in Resources */,
 				8E210A9D2C3417AF00923D7A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABB00052C3417AE00AABB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +345,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AABB00032C3417AE00AABB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABB00202C3417AE00AABB20 /* AppScreen.swift in Sources */,
+				AABB00212C3417AE00AABB21 /* BaseTest.swift in Sources */,
+				AABB00222C3417AE00AABB22 /* FileListScreen.swift in Sources */,
+				AABB00232C3417AE00AABB23 /* LoginScreen.swift in Sources */,
+				AABB00242C3417AE00AABB24 /* SetPasswordScreen.swift in Sources */,
+				AABB00252C3417AE00AABB25 /* LoginTests.swift in Sources */,
+				AABB00262C3417AE00AABB26 /* AddFolderTests.swift in Sources */,
+				AABB00272C3417AE00AABB27 /* AddPhotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AABB00062C3417AE00AABB06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E210A8C2C3417AE00923D7A /* FileManager */;
+			targetProxy = AABB00072C3417AE00AABB07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8E210A9B2C3417AF00923D7A /* LaunchScreen.storyboard */ = {
@@ -429,6 +557,46 @@
 			};
 			name = Release;
 		};
+		AABB00082C3417AE00AABB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4YMDNRFZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FileManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FileManager;
+			};
+			name = Debug;
+		};
+		AABB00092C3417AE00AABB09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4YMDNRFZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FileManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FileManager;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +614,15 @@
 			buildConfigurations = (
 				8E210AA22C3417AF00923D7A /* Debug */,
 				8E210AA32C3417AF00923D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABB000A2C3417AE00AABB0A /* Build configuration list for PBXNativeTarget "FileManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABB00082C3417AE00AABB08 /* Debug */,
+				AABB00092C3417AE00AABB09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
