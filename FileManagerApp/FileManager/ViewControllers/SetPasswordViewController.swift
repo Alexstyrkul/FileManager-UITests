@@ -42,6 +42,7 @@ class SetPasswordViewController: UIViewController {
     
     private lazy var setPasswordButton: UIButton = {
         let button = CustomButton(customTitle: "Set Password", action: {})
+        button.accessibilityIdentifier = "setPasswordButton"
         button.addTarget(self, action: #selector(setPasswordButtonTapped), for: .touchUpInside)
         return button
     }()

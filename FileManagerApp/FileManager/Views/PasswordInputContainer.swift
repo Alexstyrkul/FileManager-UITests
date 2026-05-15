@@ -18,6 +18,7 @@ final class PasswordInputContainer: UIView {
         let textField = UITextField()
         textField.placeholder = "Password"
         textField.isSecureTextEntry = true
+        textField.accessibilityIdentifier = "setPasswordFirstTextField"
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -37,6 +38,7 @@ final class PasswordInputContainer: UIView {
         let textField = UITextField()
         textField.placeholder = "Repeat password"
         textField.isSecureTextEntry = true
+        textField.accessibilityIdentifier = "setPasswordRepeatTextField"
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()

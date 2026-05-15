@@ -2,26 +2,21 @@ import XCTest
 
 class FileListScreen: AppScreen {
 
-    var fileList: XCUIElement { app.tables.firstMatch }
-    var addButton: XCUIElement { app.navigationBars.buttons["Add"] }
-    var editButton: XCUIElement { app.navigationBars.buttons["Edit"] }
+    var tableView: XCUIElement { app.tables["folderTableView"] }
+    var addDirectoryButton: XCUIElement { app.buttons["addDirectoryButton"] }
+    var addPhotoButton: XCUIElement { app.buttons["addPhotoButton"] }
 
-    func tapFile(named name: String) -> FileDetailScreen {
-        fileList.cells.staticTexts[name].tap()
-        return FileDetailScreen(app: app)
-    }
-
-    func tapAddButton() -> FileListScreen {
-        addButton.tap()
+    func tapAddDirectoryButton() -> FileListScreen {
+        addDirectoryButton.tap()
         return self
     }
 
-    func tapEditButton() -> FileListScreen {
-        editButton.tap()
+    func tapAddPhotoButton() -> FileListScreen {
+        addPhotoButton.tap()
         return self
     }
 
     func fileExists(named name: String) -> Bool {
-        fileList.cells.staticTexts[name].exists
+        tableView.cells.staticTexts[name].exists
     }
 }

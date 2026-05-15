@@ -39,6 +39,7 @@ class LogInViewControlller: UIViewController {
     private lazy var passwordTextField: UITextFieldWithPadding = {
         let textField = UITextFieldWithPadding()
         textField.setupUI(placeholder: "Password", isSecure: true)
+        textField.accessibilityIdentifier = "loginPasswordTextField"
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -46,6 +47,7 @@ class LogInViewControlller: UIViewController {
     private lazy var loginButton: UIButton = {
         let button = CustomButton(customTitle: "Log In", action: {})
         button.setTitle("Log In", for: .normal)
+        button.accessibilityIdentifier = "loginButton"
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return button

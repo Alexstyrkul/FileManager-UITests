@@ -21,6 +21,7 @@ class FolderViewController: UIViewController {
     
     private lazy var directoryTableView: UITableView = {
         let tableView = UITableView()
+        tableView.accessibilityIdentifier = "folderTableView"
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -116,10 +117,12 @@ class FolderViewController: UIViewController {
         
         let addDirectoryImage = UIImage(systemName: "folder.fill.badge.plus")
         let addDirectoryButton = UIBarButtonItem(image: addDirectoryImage, style: .plain, target: self, action: #selector(addDirectoryButtonTapped))
-        
+        addDirectoryButton.accessibilityIdentifier = "addDirectoryButton"
+
         let addPhotoImage = UIImage(systemName: "photo.badge.plus.fill")
         let addImageButton = UIBarButtonItem(image: addPhotoImage, style: .plain, target: self, action: #selector(addPhotoButtonTapped))
-        
+        addImageButton.accessibilityIdentifier = "addPhotoButton"
+
         navigationItem.rightBarButtonItems = [addImageButton, addDirectoryButton]
     }
     
