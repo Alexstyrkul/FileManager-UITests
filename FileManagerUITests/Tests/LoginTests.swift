@@ -3,27 +3,32 @@ import XCTest
 final class LoginTests: BaseTest {
 
     func testSetPasswordScreenAppearsOnFirstLaunch() {
-        let screen = SetPasswordScreen(app: app)
-        XCTAssertTrue(screen.isVisible)
-        XCTAssertTrue(screen.firstPasswordTextField.exists)
-        XCTAssertTrue(screen.repeatPasswordTextField.exists)
-        XCTAssertTrue(screen.setPasswordButton.exists)
+        XCTContext.runActivity(named: "Verify set password screen elements are visible") { _ in
+            let screen = SetPasswordScreen(app: app)
+            screen.waitForScreen()
+            XCTAssertTrue(screen.firstPasswordTextField.exists, "First password field is missing")
+            XCTAssertTrue(screen.repeatPasswordTextField.exists, "Repeat password field is missing")
+            XCTAssertTrue(screen.setPasswordButton.exists, "Set Password button is missing")
+        }
     }
 
     func testSettingPasswordNavigatesToFileList() {
-        let fileList = navigateToFileList()
-        XCTAssertTrue(fileList.tableView.exists)
+        XCTContext.runActivity(named: "Set password and verify file list appears") { _ in
+            let fileList = navigateToFileList()
+            XCTAssertTrue(fileList.tableView.exists, "File list table view should be visible after login")
+        }
     }
 
     func testLoginScreenAppearsAfterPasswordIsSet() {
-        // Устанавливаем пароль, попадаем на файловый список, перезапускаем без UI_TESTING
-        navigateToFileList()
-        app.terminate()
+        XCTContext.runActivity(named: "Set password, restart app without UI_TESTING, verify login screen") { _ in
+            navigateToFileList()
+            app.terminate()
+            app.launchArguments = []
+            app.launch()
 
-        app.launchArguments = []
-        app.launch()
-
-        let loginScreen = LoginScreen(app: app)
-        XCTAssertTrue(loginScreen.isVisible)
+            let loginScreen = LoginScreen(app: app)
+            loginScreen.waitForScreen()
+            XCTAssertTrue(loginScreen.loginButton.exists, "Login button should be visible on relaunch")
+        }
     }
 }

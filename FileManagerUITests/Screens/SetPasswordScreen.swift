@@ -1,15 +1,17 @@
 import XCTest
 
-class SetPasswordScreen: AppScreen {
+final class SetPasswordScreen: AppScreen {
 
     var firstPasswordTextField: XCUIElement { app.secureTextFields["setPasswordFirstTextField"] }
     var repeatPasswordTextField: XCUIElement { app.secureTextFields["setPasswordRepeatTextField"] }
     var setPasswordButton: XCUIElement { app.buttons["setPasswordButton"] }
 
-    var isVisible: Bool { setPasswordButton.waitForExistence(timeout: 5) }
+    func waitForScreen() {
+        waitForScreen(element: setPasswordButton)
+    }
 
     func setPassword(_ password: String) {
-        XCTAssertTrue(setPasswordButton.waitForExistence(timeout: 5))
+        waitForScreen()
         firstPasswordTextField.tap()
         firstPasswordTextField.typeText(password)
         repeatPasswordTextField.tap()

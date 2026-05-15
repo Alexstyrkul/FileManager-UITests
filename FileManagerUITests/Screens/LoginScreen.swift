@@ -1,15 +1,17 @@
 import XCTest
 
-class LoginScreen: AppScreen {
+final class LoginScreen: AppScreen {
 
     var passwordTextField: XCUIElement { app.secureTextFields["loginPasswordTextField"] }
     var loginButton: XCUIElement { app.buttons["loginButton"] }
 
-    var isVisible: Bool { loginButton.waitForExistence(timeout: 5) }
+    func waitForScreen() {
+        waitForScreen(element: loginButton)
+    }
 
     @discardableResult
     func login(password: String) -> FileListScreen {
-        XCTAssertTrue(loginButton.waitForExistence(timeout: 5))
+        waitForScreen()
         passwordTextField.tap()
         passwordTextField.typeText(password)
         loginButton.tap()

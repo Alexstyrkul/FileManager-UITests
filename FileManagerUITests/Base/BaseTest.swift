@@ -16,15 +16,18 @@ class BaseTest: XCTestCase {
         app.terminate()
     }
 
-    // Устанавливает пароль при первом запуске и попадает на экран файлов.
-    // При UI_TESTING кейчейн очищается, поэтому всегда стартует с SetPasswordScreen.
-    // После первой установки пароля приложение сразу переходит к файловому менеджеру.
+    // Sets password on first launch and navigates to the file list.
+    // UI_TESTING clears the keychain, so the app always starts with SetPasswordScreen.
+    // After setting a password for the first time, the app navigates directly to the file list.
     @discardableResult
     func navigateToFileList() -> FileListScreen {
         let setPasswordScreen = SetPasswordScreen(app: app)
         setPasswordScreen.setPassword(BaseTest.testPassword)
         let fileList = FileListScreen(app: app)
-        XCTAssertTrue(fileList.tableView.waitForExistence(timeout: 5))
+        XCTAssertTrue(
+            fileList.tableView.waitForExistence(timeout: 5),
+            "File list table view did not appear after setting password"
+        )
         return fileList
     }
 }
